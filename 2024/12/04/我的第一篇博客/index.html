@@ -1,0 +1,198 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>我的第一篇博客 | Ttt's blog</title><meta name="author" content="天"><meta name="copyright" content="天"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="我的第一篇博客|My First Blog, Hello World终于，在两天的折腾之后，我搭建出了一个简单的博客网站，实在是可喜可贺！在第一篇博客中，我决定记录一下我搭（bai）建（piao）博客网站的经历，以供后人参考。👀👀👀 1. 开始的开始首先，你需要一个Hexo框架，请在Hexo官方网站中下载： Hexo 安装 Hexo 需要先安装下列应用程序：  Node.js (Node.j">
+<meta property="og:type" content="article">
+<meta property="og:title" content="我的第一篇博客">
+<meta property="og:url" content="http://example.com/2024/12/04/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/index.html">
+<meta property="og:site_name" content="Ttt&#39;s blog">
+<meta property="og:description" content="我的第一篇博客|My First Blog, Hello World终于，在两天的折腾之后，我搭建出了一个简单的博客网站，实在是可喜可贺！在第一篇博客中，我决定记录一下我搭（bai）建（piao）博客网站的经历，以供后人参考。👀👀👀 1. 开始的开始首先，你需要一个Hexo框架，请在Hexo官方网站中下载： Hexo 安装 Hexo 需要先安装下列应用程序：  Node.js (Node.j">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/img/headphoto.jpg">
+<meta property="article:published_time" content="2024-12-03T16:00:00.000Z">
+<meta property="article:modified_time" content="2024-12-04T10:58:16.236Z">
+<meta property="article:author" content="天">
+<meta property="article:tag" content="blog, hexo, butterfly">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/img/headphoto.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/2024/12/04/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '我的第一篇博客',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  isShuoshuo: false
+}</script><meta name="generator" content="Hexo 7.3.0"></head><body><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">Ttt's blog</span></a><a class="nav-page-title" href="/"><span class="site-name">我的第一篇博客</span></a></span><div id="menus"></div></nav><div id="post-info"><h1 class="post-title">我的第一篇博客</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-12-03T16:00:00.000Z" title="发表于 2024-12-04 00:00:00">2024-12-04</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-12-04T10:58:16.236Z" title="更新于 2024-12-04 18:58:16">2024-12-04</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">浏览量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><h1 id="我的第一篇博客-My-First-Blog-Hello-World"><a href="#我的第一篇博客-My-First-Blog-Hello-World" class="headerlink" title="我的第一篇博客|My First Blog, Hello World"></a>我的第一篇博客|My First Blog, Hello World</h1><p>终于，在两天的折腾之后，我搭建出了一个简单的博客网站，实在是可喜可贺！在第一篇博客中，我决定记录一下我搭（bai）建（piao）博客网站的经历，以供后人参考。👀👀👀</p>
+<h2 id="1-开始的开始"><a href="#1-开始的开始" class="headerlink" title="1. 开始的开始"></a>1. 开始的开始</h2><p>首先，你需要一个Hexo框架，请在Hexo官方网站中下载：</p>
+<p><a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/">Hexo</a></p>
+<p>安装 Hexo 需要先安装下列应用程序：</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="http://nodejs.org/">Node.js</a> (Node.js 版本需不低于 10.13，建议使用 Node.js 12.0 及以上版本)</li>
+<li><a target="_blank" rel="noopener" href="http://git-scm.com/">Git</a></li>
+</ul>
+<p>接着在Git Bash中通过以下五个指令快速建站：</p>
+<p>$ <code>npm install hexo-cli -g</code></p>
+<p>$ <code>hexo init blog</code> </p>
+<p>$ <code>cd blog</code></p>
+<p>$ <code>npm install</code></p>
+<p>$ <code>hexo server</code></p>
+<p>最后一个指令结束之后，访问<a target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000/</a>即可本地预览博客，代表着安装成功。</p>
+<p>在此推荐一个B站up的视频教程，可以参考这个up的前半段。<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1ts4y1f7Gu?vd_source=0c6450fd2be1f64e798ae183a8f1f7c4">点击这里</a></p>
+<p><strong>注意：</strong>由于国内网络与GitHub的连接不稳定，所以在Git Bash执行下载操作时，可能需要一定的<strong>科学上网能力</strong>以保证正常的下载。</p>
+<h2 id="2-前人栽树，后人乘凉"><a href="#2-前人栽树，后人乘凉" class="headerlink" title="2. 前人栽树，后人乘凉"></a>2. 前人栽树，后人乘凉</h2><p>在Hexo官网中可以找到主题页面，选择一个好看的主题，点击标题后会跳转至GitHub页面，根据主题自己的<strong>教程文档</strong>就可以自己配置主题了。</p>
+<h2 id="3-白嫖GitHub服务器？"><a href="#3-白嫖GitHub服务器？" class="headerlink" title="3. 白嫖GitHub服务器？"></a>3. 白嫖GitHub服务器？</h2><p>这一节教你将本地网站推送至Github仓库并创建GitHub Pages</p>
+<p>我同样推荐一个up主的教程，跟随他就能完成所有步骤：<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1Ju4m1c7WR?vd_source=0c6450fd2be1f64e798ae183a8f1f7c4">点击这里</a></p>
+<p><strong>注意：</strong></p>
+<ol>
+<li>同上，你需要一定的<strong>科学上网能力</strong>以保证正常的下载。</li>
+<li>仓库名是要和Github的用户名一样，例如用户名叫ttt，仓库名字就必须是ttt.github.io。（我踩的坑）</li>
+<li>如果过程中提示：没有安装hexo-deployer-git，请输入：<code>npm install hexo-deployer-git --save</code> 这样就能够下载了。</li>
+<li>免费账户使用GitHub Pages 托管网站需要把仓库设为公开，如果你想设为私有，那么就需要GitHub Pro账户。接下来我会谈到，作为一个大学生，如何<strong>白嫖GitHub Pro。</strong></li>
+</ol>
+<p>完成后，你就能通过xxxxx.github.io访问你自己的网站了。</p>
+<h2 id="4-GitHub还能嫖？"><a href="#4-GitHub还能嫖？" class="headerlink" title="4. GitHub还能嫖？"></a>4. GitHub还能嫖？</h2><p>在这个链接中认证：<a target="_blank" rel="noopener" href="https://github.com/education/students">https://github.com/education/students</a></p>
+<p>整个认证过程有一点麻烦，主要是参照GitHub Education的要求填写资料。有几个需要注意的点。</p>
+<ol>
+<li>记得绑定教育邮箱</li>
+<li>学生认证资料可以上传学信网下载的认证资料，但是需要转化为英文然后再拍照上传。<br>这里提供一个把学信网学籍资料转化为英文的GitHub项目：<a target="_blank" rel="noopener" href="https://github.com/Nagi-ovo/CHSI-Converter">CHSI-Converter</a><br>你的照片需要包含你的名字、学校、入学时间和预计毕业时间。因为是机器别所以记得拍的清楚一些。</li>
+<li>记得设置两步认证，可以使用Microsoft Authenticator、Google Authenticator等等两步认证器。</li>
+<li>学生认证页面显示Approved之后3天会收到邮件，之后就可以享受学生权益了😀。</li>
+</ol>
+<h2 id="5-白嫖域名计划"><a href="#5-白嫖域名计划" class="headerlink" title="5. 白嫖域名计划"></a>5. 白嫖域名计划</h2><p>还记得之前的学生认证吗？认证之后GitHub会为学生提供一个权益包，其中就有几个域名网站，为学生提供免费的网站域名。在此我选择介绍Namecheap，它为学生免费提供一年的.me域名。</p>
+<p>我们只需要关联一下GitHub账号，然后就可以看到大学生优惠了。在选择了域名之后，域名会自动解析到你的GitHub Page上。</p>
+<p>这里放一个网站的教程，可供参考。</p>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_50578605/article/details/140187553?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522ad6b7b98553b34ad0a4554deedcedcf5%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=ad6b7b98553b34ad0a4554deedcedcf5&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduend~default-1-140187553-null-null.142%5Ev100%5Epc_search_result_base3&utm_term=namecheap&spm=1018.2226.3001.4187"><strong>2024年最新Namecheap域名注册购买及解析教程</strong></a></p>
+<h2 id="6-加速！加速！再加速！"><a href="#6-加速！加速！再加速！" class="headerlink" title="6. 加速！加速！再加速！"></a>6. 加速！加速！再加速！</h2><p>有了Page之后，你会发现，网站页面分享给不会科学上网的朋友 <del>装B吹水</del> <strong>学习</strong>时，别人怎么都打不开你的网站。为了更好地分（zhuang）享（bi），这时你需要一个CDN服务。而Cloudflare正好为你提供了免费的CDN服务。怎么使用呢，教程如下：</p>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/EliasChang/article/details/136779644?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522c51c45a1545ad675570187b5dca6902d%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=c51c45a1545ad675570187b5dca6902d&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduend~default-1-136779644-null-null.142%5Ev100%5Epc_search_result_base3&utm_term=github%20pages%E5%8A%A0%E9%80%9F&spm=1018.2226.3001.4187">GitHub Pages加速</a></p>
+<p><strong>注意：</strong></p>
+<ol>
+<li>请把Cloudflare名称服务器的两个地址填在在步骤5提供的教程中 <strong>Namecheap 域名解析 Custom DNS</strong> 那里。</li>
+<li>完成填写后点击立即检查名称服务器，半小时内收到邮件提醒，你的域名也就加速完成了。</li>
+</ol>
+<p>经过这几个简简单单的步骤，我就拥有了一个自己的博客网站，接着我会进一步的优化和升级。期待你的来访。</p>
+<p>以上。</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="http://example.com">天</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="http://example.com/2024/12/04/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/">http://example.com/2024/12/04/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来源 <a href="http://example.com" target="_blank">Ttt's blog</a>！</span></div></div><div class="tag_share"><div class="post-share"><div class="social-share" data-image="/img/headphoto.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/headphoto.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">天</div><div class="author-info-description">My personal blog</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">1</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2-My-First-Blog-Hello-World"><span class="toc-number">1.</span> <span class="toc-text">我的第一篇博客|My First Blog, Hello World</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E5%BC%80%E5%A7%8B%E7%9A%84%E5%BC%80%E5%A7%8B"><span class="toc-number">1.1.</span> <span class="toc-text">1. 开始的开始</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E5%89%8D%E4%BA%BA%E6%A0%BD%E6%A0%91%EF%BC%8C%E5%90%8E%E4%BA%BA%E4%B9%98%E5%87%89"><span class="toc-number">1.2.</span> <span class="toc-text">2. 前人栽树，后人乘凉</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E7%99%BD%E5%AB%96GitHub%E6%9C%8D%E5%8A%A1%E5%99%A8%EF%BC%9F"><span class="toc-number">1.3.</span> <span class="toc-text">3. 白嫖GitHub服务器？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-GitHub%E8%BF%98%E8%83%BD%E5%AB%96%EF%BC%9F"><span class="toc-number">1.4.</span> <span class="toc-text">4. GitHub还能嫖？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-%E7%99%BD%E5%AB%96%E5%9F%9F%E5%90%8D%E8%AE%A1%E5%88%92"><span class="toc-number">1.5.</span> <span class="toc-text">5. 白嫖域名计划</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-%E5%8A%A0%E9%80%9F%EF%BC%81%E5%8A%A0%E9%80%9F%EF%BC%81%E5%86%8D%E5%8A%A0%E9%80%9F%EF%BC%81"><span class="toc-number">1.6.</span> <span class="toc-text">6. 加速！加速！再加速！</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/12/04/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" title="我的第一篇博客">我的第一篇博客</a><time datetime="2024-12-03T16:00:00.000Z" title="发表于 2024-12-04 00:00:00">2024-12-04</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2019 - 2024 By 天</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
